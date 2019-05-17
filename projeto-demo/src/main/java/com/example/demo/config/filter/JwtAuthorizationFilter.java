@@ -1,8 +1,6 @@
 package com.example.demo.config.filter;
 
-import static com.example.demo.config.Constants.HEADER_STRING;
-import static com.example.demo.config.Constants.SECRET;
-import static com.example.demo.config.Constants.TOKEN_PREFIX;
+import static com.example.demo.config.Constants.*;
 
 import java.io.IOException;
 

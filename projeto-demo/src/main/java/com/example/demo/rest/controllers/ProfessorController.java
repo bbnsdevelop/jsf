@@ -12,7 +12,7 @@ public class ProfessorController {
 	
 	@GetMapping("professor")
 	public ResponseEntity<?> getAllProfessor(){
-		return ResponseEntity.status(HttpStatus.OK).body(null);
+		return ResponseEntity.status(HttpStatus.OK).body("ok");
 	}
 	
 

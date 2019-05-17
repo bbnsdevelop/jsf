@@ -2,6 +2,7 @@ package com.example.demo.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
@@ -16,13 +17,14 @@ public class ApplicationUser extends AbstractEntity {
 	private static final long serialVersionUID = 1L;
 	
 	@NotEmpty(message ="The field username cannot be empty")
-	@Column(unique = true)
+	@Column(unique = true, name ="user_name")
 	private String userName;
 	
 	@NotEmpty(message ="The field password cannot be empty")
 	private String password;
 	
 	@OneToOne
+	@JoinColumn(name ="professor_id")
 	private Professor professor;
 	
 	public ApplicationUser() {
